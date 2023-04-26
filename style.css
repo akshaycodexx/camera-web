@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap");
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+} */
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  
+  }
+  html{
+   
+    overflow-x: hidden;
+  }
+
+:root {
+    --primary-color: #fc1100;
+    --black: #070707;
+    --gradient: radical-gradient(#525252, #131313);
+}
+
+body {
+  
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+
+}
+
+.header {
+    position: fixed;
+   
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 1.2rem;
+    color: white;
+    cursor: none;
+
+}
+.navbar button{
+ padding: 0.7rem 2rem;
+ border-radius: 20px;
+ background-color: var(--primary-color);
+ color: white;
+ font-size: 23px;
+ font-family: "Lobster", cursive;
+ cursor: pointer;
+}
+
+.navbar button:hover{
+   
+    background: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 3rem var(--primary-color);
+
+}
+
+section {
+    min-height: 100vh;
+    width: auto;
+    padding: 9rem 2% 2rem;
+
+    /* background: radical-gradient(#525252,#131313); 
+    */
+    background: linear-gradient(#525252, #131313);
+}
+
+.home {
+    display: grid;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home img {
+    width: 28.4rem;
+    margin-top: 1.2rem;
+    justify-content: flex-start;
+   
+}
+
+.home h2 {
+    font-size: 4em;
+    color: white;
+    padding-left: 5rem;
+}
+
+.home h3 {
+    color: white;
+    margin-top: 2.3rem;
+    padding-left: 2.5rem;
+    font-size: 2rem;
+    word-spacing: 1rem;
+    
+    
+    
+}
+.home p{
+    color: white;
+    word-spacing: .2rem;
+}
+section{
+    width: 100%;
+}
+.card{
+   display: grid;
+   grid-template-columns: auto auto auto;
+}
+.card1 img{
+width: 8rem;
+}
+.card1 h2{
+    font-size: .8rem;
+    padding: 21px;
+}
+.card1{
+    border: 2px solid rgba(96, 96, 96, 0.752);
+    padding: 20px 10px;
+    text-align: center;
+    box-sizing: border-box;
+   margin: 12px;
+}
+
+.footer{background-color: #070707;
+text-align: center;}
+.footer p{
+    font-size: .8rem;
+    color: white;
+  }
+  @media (max-width:500px) and ( min-width:300px){
+    .card{
+        display: inline;
+    }
+    .navbar button {
+        font-size: 0.8rem;
+    
+        margin-left: 1rem;
+    }
+    .logo{
+        font-size: small;
+    }
+  }
